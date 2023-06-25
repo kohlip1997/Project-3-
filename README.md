@@ -11,9 +11,12 @@ to acess the appliaction
 http://[IP host of continer]:3000
 Note:
 Make sure allowing port nuber in secuity group
+
 1- First we need to create environment 
 To run applications 
+
 2-  Create EC2 instance in aws
+
 3- Install docker and docker compose
 
 To start  the appliantion 
