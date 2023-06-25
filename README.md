@@ -37,7 +37,5 @@ To start  the appliantion
  a- docker-compose up -d 
  
  
-Here is a list explaining the purpose of each command.
 
-  # add here all commands that shared with  you before 
  
