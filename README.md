@@ -11,30 +11,30 @@ to acess the appliaction
 http://[IP host of continer]:3000
 Note:
 Make sure allowing port nuber in secuity group
+1- First we need to create environment 
+To run applications 
+2-  Create EC2 instance in aws
+3- Install docker and docker compose
 
-# To choese image that  you need  to use in continer
-FROM node:18-alpine as base
+To start  the appliantion 
+  a- Run command    docker-compose up
+  b- Acess the appliaction using the following UR
+ http://[URL]:/[Port]
+   - URL -> Sevver IP
+   - Port -> Port number configured in the Docker Compose file
+  
 
-#  inside the continer go to this path
-WORKDIR /src
+4- The application is stored in GitHub
 
-# copy   package files to  / Path
-COPY package*.json /
+5- To stop the applation 
+ a- run command docker-compose down
+ 
 
-# Run continer  on 3000 Port
-EXPOSE 3000
+6- To Run the appliaciotn in backgroup
+ a- docker-compose up -d 
+ 
+ 
+Here is a list explaining the purpose of each command.
 
-# Set Env var inside continer 
-ENV NODE_ENV=development
-# run this commands inside continer (shell commands)
-RUN npm install -g nodemon && npm install
-# copy command to copy files to from repo  inside continer 
-COPY . /
-# run commnad when container starts
-CMD ["nodemon", "bin/www"]
-
-FROM base as dev
-ENV NODE_ENV=development
-RUN npm install -g nodemon && npm install
-COPY . /
-CMD ["nodemon", "bin/www"]
+  # add here all commands that shared with  you before 
+ 
