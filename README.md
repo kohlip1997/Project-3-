@@ -1,5 +1,12 @@
 # Project-3-
 
+Group Members
+Luis 
+Sara 
+Bhargav 
+Prithvi 
+
+
 First Git project
 Container Apps - Project 3 
 
@@ -37,5 +44,4 @@ To start  the appliantion
  a- docker-compose up -d 
  
  
-
  
